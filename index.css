@@ -1,9 +1,8 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -26,6 +25,7 @@ h2 {
 
 h3 {
     font-size: 1em;
+    color: rgb(247, 120, 1);
 }
 
 p {
@@ -115,7 +115,7 @@ header a:hover {
     color: white;
 }
 
-#hero button{
+#hero button {
     font-size: 1.75em;
 }
 
@@ -123,21 +123,21 @@ header a:hover {
     margin: 0px;
 }
 
-#Somos-ProYa .container{
+#Somos-ProYa .container {
     text-align: center;
     padding: 200px 12px;
 
 }
 
-#nuestros-programas{
+#nuestros-programas {
     background-color: rgb(30, 30, 30);
     color: rgb(0, 0, 0);
-    text-align: center;    
-    
+    text-align: center;
+
 }
 
 #nuestros-programas .container {
-    padding: 150px 15px;  
+    padding: 150px 15px;
 }
 
 #nuestros-programas h2 {
@@ -146,7 +146,7 @@ header a:hover {
     color: white;
 }
 
-#nuestros-programas p{
+#nuestros-programas p {
     display: none;
 }
 
@@ -157,34 +157,42 @@ header a:hover {
     padding: 50px;
     margin: 12px;
     border-radius: 15px;
+    color: white;
 }
 
 .carta:first-child {
-    background-image: url(/img/foncar1.jpg);
-
+    background-image: linear-gradient(0,
+            rgba(0, 0, 0, 0.733),
+            rgba(0, 0, 0, 0.733)),
+        url(/img/foncar1.jpg);
 }
 
 .carta:nth-child(2) {
-    background-image: url(/img/foncar2.jpg);
-
+    background-image: linear-gradient(0,
+            rgba(0, 0, 0, 0.733),
+            rgba(0, 0, 0, 0.733)),
+        url(/img/foncar2.jpg);
 }
 
 .carta:nth-child(3) {
-    background-image: url(/img/foncar3.jpg);
+    background-image: linear-gradient(0,
+            rgba(0, 0, 0, 0.733),
+            rgba(0, 0, 0, 0.733)),
+        url(/img/foncar3.jpg);
 }
 
-#Caracteristicas .container{
+#Caracteristicas .container {
     text-align: center;
     padding: 200px 12px;
 }
 
-#Caracteristicas li{
+#Caracteristicas li {
     margin: 15px 0px;
     font-weight: bold;
 
 }
 
-#final{
+#final {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,69 +202,100 @@ header a:hover {
     height: 80vh;
 }
 
-#final h2{
+#final h2 {
     color: white;
     font-size: 9vh;
 }
 
-#final button{
+#final button {
     font-size: 1.75vw;
 }
 
-footer{
+footer {
     background-color: rgb(230, 230, 230);
 }
 
-footer p{
+footer p {
     margin: 0px;
     padding: 12px;
     color: rgb(100, 100, 100);
 }
 
-footer .container{
+footer .container {
     height: 150px;
     justify-content: center;
     display: flex;
     align-items: flex-end;
 }
 
-@media(min-width: 720px){
+@media(min-width: 720px) {
 
-    header{
+    header {
         position: fixed;
         width: 100%;
     }
-    
-    header .container{
+
+    header .container {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    header nav{
+    header nav {
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
     }
 
-    #Somos-ProYa .container{
-        display: flex;
-        justify-content: center;
-
+    #hero h1 {
+        font-size: 4em;
     }
 
-    #Somos-Proya .texto{
-        width: 50%;
-        max-width: 350px;
+    #Somos-ProYa .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Somos-ProYa .texto {
+        width: 40%;
+        max-width: 600px;
         text-align: initial;
-        padding: 0px 30px;
+        padding-left: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    #Somos-ProYa .img-container{
-        background-image: url(/img/fondo1.jpg);
+    #Somos-ProYa h2 {
+
+        margin-top: 0px;
     }
 
+    #Somos-ProYa .img-container {
+        background-image: url("/img/imagenaldes.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-programas .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p {
+        display: block;
+    }
+
+    #nuestros-programas h3 {
+        margin-top: 0px;
+        display: block;
+    }
+
+    #nuestros-programas .carta {
+        padding: 15px;
+        background-size: 100% 150px;
+        background-position: initial;
+    }
 
 }
